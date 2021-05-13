@@ -6,7 +6,154 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos">
+        <rdfs:comment>Ontologie sur les jeux vidéos décrivant différentes licences de jeux vidéos à partir de leur(s) genre(s), leur studio, la plateforme sur laquelle elles sont disponibles, le nombre de joueurs et la compétitivité.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstPosbbileSur"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#AppartientA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#AppartientA">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Regroupe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Developpe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Developpe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstExclusifA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstExclusifA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PermetDeJouerDeManiereExclusiveA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstPosbbileSur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstPosbbileSur">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstSpeedrunable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstSpeedrunable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeFaitSur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PermetDeJouerA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PermetDeJouerA">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PermetDeJouerDeManiereExclusiveA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PermetDeJouerDeManiereExclusiveA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PermetDeJouerA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PeuventJouerA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PeuventJouerA">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Regroupe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Regroupe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeFaitSur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeFaitSur">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstPosbbileSur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+    </owl:ObjectProperty>
     
 
 
@@ -37,6 +184,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Deux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Solo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#None"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#AppartientA"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Simulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Aventure -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Aventure">
@@ -45,11 +236,65 @@
     
 
 
-    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Bandai_Namco -->
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Celeste -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Bandai_Namco">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Celeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstSpeedrunable"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Speedrun"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Microsoft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ordinateur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#AppartientA"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Independant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Solo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
     
 
 
@@ -57,6 +302,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Course">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Deux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Deux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Multijoueur"/>
     </owl:Class>
     
 
@@ -77,16 +330,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Esport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Esport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
     
 
 
-    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Jeu_de_Programmation -->
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Independant -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Jeu_de_Programmation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Independant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
     </owl:Class>
     
 
@@ -99,10 +360,58 @@
     
 
 
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#AppartientA"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Microsoft -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Microsoft">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Multijoueur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Multijoueur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Solo"/>
     </owl:Class>
     
 
@@ -112,6 +421,20 @@
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#None -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#None">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
     </owl:Class>
     
 
@@ -127,6 +450,30 @@
     <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plus_de_quatre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plus_de_quatre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Multijoueur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Quatre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Quatre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Multijoueur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ranked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ranked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+    </owl:Class>
     
 
 
@@ -162,10 +509,77 @@
     
 
 
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smash_Bros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smash_Bros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Esport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Speedrun"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Multijoueur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Solo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#AppartientA"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EstDeveloppePar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Solo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Solo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Speedrun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Speedrun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
     </owl:Class>
     
 
@@ -239,7 +653,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Action-Aventure"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Aventure"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Course"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Jeu_de_Programmation"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Jeu_de_Rôle"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Rythme"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Réflexion"/>
@@ -251,10 +664,47 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Bandai_Namco"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Competitivite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Licences"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nombre_de_joueurs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Deux"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plus_de_quatre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Quatre"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#EA"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Epic_Games"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Independant"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Square_Enix"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Take_Two_Interactive"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ubisoft"/>
@@ -264,9 +714,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Genre"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Plateforme"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Studio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Esport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#None"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ranked"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Speedrun"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
