@@ -2329,6 +2329,122 @@
     
 
 
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Android -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Android">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smartphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Anima_Crossing_Wild_World -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Anima_Crossing_Wild_World">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_DS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing_New_Horizons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing_New_Horizons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_Switch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing_New_Leaf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing_New_Leaf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Animal_Crossing"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_3DS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smartphone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Friends_Saga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Friends_Saga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Android"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Jelly_Saga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Jelly_Saga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Android"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Saga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Saga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Android"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Soda_Saga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush_Soda_Saga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Candy_Crush"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Android"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Dark_Souls"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_7 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_7">
@@ -2342,6 +2458,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_8">
         <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_Switch"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII_U"/>
     </owl:NamedIndividual>
     
 
@@ -2359,6 +2477,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_WII">
         <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII"/>
     </owl:NamedIndividual>
     
 
@@ -2391,6 +2510,238 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII">
         <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII_U -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII_U">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ordinateur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_3DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_3DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smash_Bros"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_3DS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_Brawl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_Brawl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smash_Bros"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_Ultimate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_Ultimate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smash_Bros"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_Switch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_WII_U -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Super_Smash_Bros_WII_U">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Smash_Bros"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII_U"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Microsoft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Microsoft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Brotherhood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Brotherhood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Odyssey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Odyssey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Origins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Origins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Revelations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Revelations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Rogue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Rogue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS3"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_360"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Syndicate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Syndicate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Unity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Unity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Valhalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed_Valhalla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Assassin&apos;s_Creed"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PC"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#PS4"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Xbox_ONE"/>
     </owl:NamedIndividual>
     
 
