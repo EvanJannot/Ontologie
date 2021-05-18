@@ -539,6 +539,30 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Microsoft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Ordinateur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#SeJoueSur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Sony"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#ACompetitivite"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Speedrun"/>
             </owl:Restriction>
@@ -2291,6 +2315,83 @@
             </owl:Class>
         </owl:equivalentClass>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_3DS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart"/>
+        <SeJoueSur rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_DS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_WII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart_WII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Mario_Kart"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_3DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_3DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_Switch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_Switch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo_WII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#Nintendo"/>
+    </owl:NamedIndividual>
     
 
 

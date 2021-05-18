@@ -1,17 +1,17 @@
-PREFIX k: <http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#>
+PREFIX JV: <http://www.semanticweb.org/evanj/ontologies/2021/4/JeuxVidéos#>
 
 SELECT ?Jeux
-	WHERE { ?Jeux rdfs:subClassOf k:Licences}
+	WHERE { ?Jeux rdfs:subClassOf JV:Licences}
 	ORDERBY ?Jeux 
 
 SELECT ?Genres
-	WHERE { ?Genres rdfs:subClassOf k:Genre}
+	WHERE { ?Genres rdfs:subClassOf JV:Genre}
 	ORDERBY ?Genres
 
 SELECT ?Jeux
 	WHERE {
-		?Jeux rdfs:subClassOf k:Licences .
-		FILTER(?Jeux = k:God_of_war)
+		?Jeux rdfs:subClassOf JV:Licences .
+		FILTER(?Jeux = JV:God_of_war)
 	}
 
 SELECT DISTINCT ?Propriétés
